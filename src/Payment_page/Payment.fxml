@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1280.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Payment_page.Payment_controller">
+   <children>
+      <ImageView fitHeight="1280.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Background.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="200.0" layoutY="156.0" opacity="0.88" prefHeight="720.0" prefWidth="1520.0" style="-fx-background-color: black; -fx-background-radius: 25px;">
+         <effect>
+            <Blend mode="COLOR_BURN" />
+         </effect>
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d32323" height="567.0" layoutX="944.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+            <TextField fx:id="cardnumber" layoutX="962.0" layoutY="213.0" prefHeight="40.0" prefWidth="419.0" promptText="Card Number" style="-fx-background-color: #e0e0e0;" />
+            <TextField fx:id="month" layoutX="962.0" layoutY="276.0" prefHeight="40.0" prefWidth="80.0" promptText="Month" style="-fx-background-color: #e0e0e0;" />
+            <TextField fx:id="year" layoutX="1066.0" layoutY="276.0" prefHeight="40.0" prefWidth="80.0" promptText="Year" style="-fx-background-color: #e0e0e0;" />
+            <TextField fx:id="cvv" layoutX="962.0" layoutY="335.0" prefHeight="40.0" prefWidth="80.0" promptText="CVV" style="-fx-background-color: #e0e0e0;" />
+            <Button fx:id="pay" layoutX="1269.0" layoutY="421.0" mnemonicParsing="false" onAction="#pay" style="-fx-background-color: #d32323; -fx-background-radius: 10px;" text="Pay Now" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+            <ImageView fitHeight="40.0" fitWidth="148.0" layoutX="962.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@credit-cards-logos.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Log_in_page/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="62.0" fitWidth="260.0" layoutX="126.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Log_in_page/logoWrite.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="table" layoutX="222.0" layoutY="210.0" prefHeight="304.0" prefWidth="532.0" style="-fx-background-color: black;">
+              <columns>
+                <TableColumn fx:id="one" prefWidth="116.0" text="Product Code" />
+                <TableColumn fx:id="two" prefWidth="195.0" text="Product Name" />
+                  <TableColumn fx:id="three" prefWidth="39.0" text="Qty" />
+                  <TableColumn fx:id="four" prefWidth="94.0" text="Each Price" />
+                  <TableColumn fx:id="five" prefWidth="84.0" text="Total" />
+              </columns>
+            </TableView>
+            <Button fx:id="" layoutX="178.0" layoutY="573.0" mnemonicParsing="false" onAction="#remove" prefHeight="44.0" prefWidth="270.0" style="-fx-background-color: #d32323; -fx-background-radius: 10px; -fx-font-weight: bold;" text="Remove Product" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="178.0" layoutY="631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a Row then Click Remove Product" wrappingWidth="288.3232421875" />
+            <ImageView fitHeight="107.0" fitWidth="92.0" layoutX="1400.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Products_page/back.png" />
+               </image>
+            </ImageView>
+            <Hyperlink layoutX="1437.0" layoutY="46.0" onAction="#back" text="Back" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

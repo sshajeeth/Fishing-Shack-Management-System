@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Fish_Market.jnlp">
+  <information>
+    <title>Fish Market</title>
+    <vendor>Unknown</vendor>
+    <description>Fish Market</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Fish_Market.jar" size="830603" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="1280" height="720" main-class="Log_in_page.Log_in"  name="Fish Market" />
+  <update check="background"/>
+</jnlp>

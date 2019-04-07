@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<?import javafx.scene.Cursor?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1280.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Staffs_page.Staff_controller">
+    <children>
+        <ImageView fitHeight="1280.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Background.jpg" />
+            </image>
+        </ImageView>
+
+        <Pane layoutX="150.0" layoutY="50.0" opacity="0.84" prefHeight="980.0" prefWidth="1620.0" style="-fx-background-color: black;">
+            <children>
+                <TableView fx:id="table" layoutX="399.0" layoutY="285.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="347.0" prefWidth="601.0" style="-fx-background-color: black;">
+                    <columns>
+                        <TableColumn fx:id="one" prefWidth="100.0" text="CustomerId" />
+                        <TableColumn fx:id="two" prefWidth="123.0" text="Customer Name" />
+                        <TableColumn fx:id="three" prefWidth="93.0" text="ProductId" />
+                        <TableColumn fx:id="four" prefWidth="119.0" text="Product Name" />
+                        <TableColumn fx:id="five" prefWidth="49.0" text="Qty" />
+                        <TableColumn fx:id="six" prefWidth="115.0" text="Total" />
+                    </columns>
+                </TableView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../Log_in_page/logo.png" />
+                </image>
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect>
+                </ImageView>
+
+        <ImageView fitHeight="66.0" fitWidth="334.0" layoutX="124.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Log_in_page/logoWrite.png" />
+            </image>
+            <effect>
+                <Blend mode="COLOR_BURN" />
+            </effect>
+        </ImageView>
+                <TextField fx:id="name" layoutX="755.0" layoutY="213.0" promptText="Email" />
+                <Button layoutX="961.0" layoutY="213.0" mnemonicParsing="false" onAction="#searchByEmail" style="-fx-background-color: #d32323; -fx-background-radius: 10px;" text="Search" textFill="WHITE">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <effect>
+                        <Blend mode="COLOR_BURN" />
+                    </effect>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</Pane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="rootPane" prefHeight="1280.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Log_in_page.Log_in_controller">
+   <children>
+      <ImageView fitHeight="1280.0" fitWidth="1948.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" styleClass="Button">
+         <image>
+            <Image url="@../Background.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <Pane layoutX="1327.0" layoutY="219.0" prefHeight="549.0" prefWidth="444.0" style="-fx-background-color: black; -fx-background-radius: 25px;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="163.0" layoutX="23.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="email" layoutX="13.0" layoutY="202.0" prefHeight="50.0" prefWidth="409.0" promptText="Email" style="-fx-background-color: #e0e0e0;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <PasswordField fx:id="password" layoutX="14.0" layoutY="280.0" prefHeight="50.0" prefWidth="409.0" promptText="Password" style="-fx-background-color: e0e0e0;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></PasswordField>
+            <Button fx:id="log_in" layoutX="23.0" layoutY="388.0" mnemonicParsing="false" onAction="#Log_in" prefHeight="50.0" prefWidth="389.0" style="-fx-background-color: #d32323; -fx-background-radius: 10px; " text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="116.0" fitWidth="256.0" layoutX="130.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logoWrite.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="211.0" layoutY="467.0" strokeType="OUTSIDE" strokeWidth="0.0" text="or">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Hyperlink layoutX="139.0" layoutY="469.0" onAction="#Sign_up" text="Create a New Account" />
+         </children>
+         <effect>
+            <Blend mode="COLOR_BURN" />
+         </effect>
+      </Pane>
+   </children>
+</Pane>

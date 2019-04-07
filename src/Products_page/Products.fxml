@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--suppress ALL -->
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1280.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Products_page.Products_controller">
+   <children>
+      <ImageView fitHeight="1280.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Background.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="400.0" layoutY="65.0" opacity="0.93" prefHeight="880.0" prefWidth="1120.0" style="-fx-background-color: black;">
+         <children>
+            <BorderPane layoutX="98.0" layoutY="229.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #d32323;">
+               <center>
+                  <ImageView fx:id="pro1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <BorderPane layoutX="797.0" layoutY="549.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #d32323;">
+               <center>
+                  <ImageView fx:id="pro6" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <BorderPane layoutX="797.0" layoutY="229.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #d32323;">
+               <center>
+                  <ImageView fx:id="pro3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <BorderPane layoutX="443.0" layoutY="549.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #d32323;">
+               <center>
+                  <ImageView fx:id="pro5" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <BorderPane layoutX="443.0" layoutY="229.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #d32323;">
+               <center>
+                  <ImageView fx:id="pro2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <BorderPane layoutX="98.0" layoutY="549.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #d32323;">
+               <center>
+                  <ImageView fx:id="pro4" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d32323" height="6.0" layoutX="57.0" layoutY="180.0" stroke="BLACK" strokeType="INSIDE" width="1000.0">
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect></Rectangle>
+            <ImageView fitHeight="155.0" fitWidth="220.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Log_in_page/logo.png" />
+               </image>
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="76.0" fitWidth="331.0" layoutX="125.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Log_in_page/logoWrite.png" />
+               </image>
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect>
+            </ImageView>
+            <Button fx:id="rods" layoutX="161.0" layoutY="503.0" mnemonicParsing="false" onAction="#rods" prefHeight="32.0" prefWidth="105.0" style="-fx-background-color: #d32323; -fx-background-radius: 10px;" text="Add to Cart" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="rodsLabel" layoutX="169.0" layoutY="430.0" prefHeight="14.0" prefWidth="60.0" text="Sha" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="reelsLabel" layoutX="514.0" layoutY="430.0" prefHeight="14.0" prefWidth="60.0" text="Sha" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="924.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@settings.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="111.0" fitWidth="72.0" layoutX="769.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@checkout.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="total" layoutX="878.0" layoutY="138.0" prefHeight="21.0" prefWidth="175.0" text="00.00" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="965.0" layoutY="15.0" onAction="#settings" text="Settings" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="846.0" layoutY="138.0" prefHeight="21.0" prefWidth="175.0" text="Rs" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="checkout" layoutX="954.0" layoutY="139.0" onAction="#checkout" text="Checkout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Hyperlink>
+            <Label fx:id="hooksLabel" layoutX="875.0" layoutY="430.0" prefHeight="14.0" prefWidth="60.0" text="Sha" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="fishingLinesLabel" layoutX="134.0" layoutY="750.0" prefHeight="14.0" prefWidth="150.0" text="Sha" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="sinkersLabel" layoutX="510.0" layoutY="750.0" prefHeight="14.0" prefWidth="88.0" text="Sha" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="swivelsLabel" layoutX="871.0" layoutY="750.0" prefHeight="14.0" prefWidth="88.0" text="Sha" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <SplitMenuButton layoutX="98.0" layoutY="460.0" mnemonicParsing="false" text="Size">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#rodsSize1" text="Light Power" />
+                <MenuItem mnemonicParsing="false" onAction="#rodsSize2" text="Medium Power" />
+                  <MenuItem mnemonicParsing="false" onAction="#rodsSize3" text="Heavy Power" />
+              </items>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </SplitMenuButton>
+            <SplitMenuButton layoutX="443.0" layoutY="460.0" mnemonicParsing="false" text="Size">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#reelsSize1" text="Small" />
+                  <MenuItem mnemonicParsing="false" onAction="#reelsSize2" text="Medium" />
+                  <MenuItem mnemonicParsing="false" onAction="#reelsSize3" text="Large" />
+               </items>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </SplitMenuButton>
+            <SplitMenuButton layoutX="797.0" layoutY="460.0" mnemonicParsing="false" text="Size">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#hookssSize1" text="Small" />
+                  <MenuItem mnemonicParsing="false" onAction="#hooksSize2" text="Medium" />
+                  <MenuItem mnemonicParsing="false" onAction="#hooksSize3" text="Large" />
+               </items>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </SplitMenuButton>
+            <SplitMenuButton layoutX="803.0" layoutY="780.0" mnemonicParsing="false" text="Size">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#swivelsSize1" text="Small" />
+                  <MenuItem mnemonicParsing="false" onAction="#swivelsSize2" text="Medium" />
+                  <MenuItem mnemonicParsing="false" onAction="#swivelsSize3" text="Large" />
+               </items>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </SplitMenuButton>
+            <SplitMenuButton layoutX="443.0" layoutY="780.0" mnemonicParsing="false" text="Size">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#sinkersSize1" text="1000g" />
+                  <MenuItem mnemonicParsing="false" onAction="#sinkersSize2" text="2000g" />
+                  <MenuItem mnemonicParsing="false" onAction="#sinkersSize3" text="3000g" />
+               </items>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </SplitMenuButton>
+            <SplitMenuButton layoutX="96.0" layoutY="780.0" mnemonicParsing="false" text="Size">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#fishingLinesSize1" text="100m" />
+                  <MenuItem mnemonicParsing="false" onAction="#fishingLinesSize2" text="200m" />
+                  <MenuItem mnemonicParsing="false" onAction="#fishingLinesSize3" text="300m" />
+               </items>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </SplitMenuButton>
+            <Label layoutX="181.0" layoutY="461.0" prefHeight="21.0" prefWidth="175.0" text="Rs" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="rodsPrice" layoutX="213.0" layoutY="461.0" prefHeight="21.0" prefWidth="175.0" text="00.00" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="530.0" layoutY="461.0" prefHeight="21.0" prefWidth="175.0" text="Rs" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="reelsPrice" layoutX="562.0" layoutY="461.0" prefHeight="21.0" prefWidth="175.0" text="00.00" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="889.0" layoutY="461.0" prefHeight="21.0" prefWidth="175.0" text="Rs" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="hooksPrice" layoutX="921.0" layoutY="461.0" prefHeight="21.0" prefWidth="175.0" text="00.00" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="187.0" layoutY="781.0" prefHeight="21.0" prefWidth="175.0" text="Rs" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="fishingLinesPrice" layoutX="219.0" layoutY="781.0" prefHeight="21.0" prefWidth="175.0" text="00.00" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="530.0" layoutY="781.0" prefHeight="21.0" prefWidth="175.0" text="Rs" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="sinkersPrice" layoutX="562.0" layoutY="781.0" prefHeight="21.0" prefWidth="175.0" text="00.00" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="889.0" layoutY="781.0" prefHeight="21.0" prefWidth="175.0" text="Rs" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="swivelsPrice" layoutX="921.0" layoutY="781.0" prefHeight="21.0" prefWidth="175.0" text="00.00" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="870.0" layoutY="825.0" mnemonicParsing="false" onAction="#swivels" prefHeight="32.0" prefWidth="105.0" style="-fx-background-color: #d32323; -fx-background-radius: 10px;" text="Add to Cart" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="508.0" layoutY="825.0" mnemonicParsing="false" onAction="#sinkers" prefHeight="32.0" prefWidth="105.0" style="-fx-background-color: #d32323; -fx-background-radius: 10px;" text="Add to Cart" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="161.0" layoutY="825.0" mnemonicParsing="false" onAction="#fishingLines" prefHeight="32.0" prefWidth="105.0" style="-fx-background-color: #d32323; -fx-background-radius: 10px;" text="Add to Cart" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="507.0" layoutY="503.0" mnemonicParsing="false" onAction="#reels" prefHeight="32.0" prefWidth="105.0" style="-fx-background-color: #d32323; -fx-background-radius: 10px;" text="Add to Cart" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="858.0" layoutY="503.0" mnemonicParsing="false" onAction="#hooks" prefHeight="32.0" prefWidth="105.0" style="-fx-background-color: #d32323; -fx-background-radius: 10px;" text="Add to Cart" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="rodsQty" layoutX="98.0" layoutY="504.0" prefHeight="33.0" prefWidth="49.0" promptText="Qty" style="-fx-background-color: black; -fx-border-color: d32323; -fx-border-radius: 5px;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="swivelsQty" layoutX="806.0" layoutY="825.0" prefHeight="33.0" prefWidth="49.0" promptText="Qty" style="-fx-background-color: black; -fx-border-color: d32323; -fx-border-radius: 5px;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="sinkersQty" layoutX="443.0" layoutY="825.0" prefHeight="33.0" prefWidth="49.0" promptText="Qty" style="-fx-background-color: black; -fx-border-color: d32323; -fx-border-radius: 5px;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="fishingLinesQty" layoutX="98.0" layoutY="825.0" prefHeight="33.0" prefWidth="49.0" promptText="Qty" style="-fx-background-color: black; -fx-border-color: d32323; -fx-border-radius: 5px;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="hooksQty" layoutX="797.0" layoutY="503.0" prefHeight="33.0" prefWidth="49.0" promptText="Qty" style="-fx-background-color: black; -fx-border-color: d32323; -fx-border-radius: 5px;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="reelsQty" layoutX="443.0" layoutY="503.0" prefHeight="33.0" prefWidth="49.0" promptText="Qty" style="-fx-background-color: black; -fx-border-color: d32323; -fx-border-radius: 5px;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <Hyperlink layoutX="967.0" layoutY="70.0" onAction="#enquiry" text="Enquiry" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Hyperlink>
+            <ImageView fitHeight="51.0" fitWidth="49.0" layoutX="922.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@enquiry.png" />
+               </image>
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect>
+            </ImageView>
+
+         </children>
+      </Pane>
+   </children>
+</Pane>
